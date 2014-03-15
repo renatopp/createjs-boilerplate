@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Easel Test</title>
+<script type="text/javascript" src="/static/createjs-2013.09.25.min.js"></script>
+<script type="text/javascript" src="/static/jquery-1.10.2.min.js"></script>
+
+<script type="text/javascript" src="/static/core/app.js"></script>
+<script type="text/javascript" src="/static/core/entity.js"></script>
+<script type="text/javascript" src="/static/core/resources.js"></script>
+<script type="text/javascript" src="/static/core/sprite.js"></script>
+
+<link href="/static/game.css" rel="stylesheet">
+
+<script type="text/javascript">
+
+var app;
+var canvas;
+var stage;
+var manifest;
+var loader;
+var resources;
+
+$(document).ready(function() {
+    app = new App();
+    canvas = $('#canvas')[0];
+    stage = new createjs.Stage(canvas);
+    resources = new Resources();
+    manifest = [];
+
+    loader = new createjs.LoadQueue(true);
+    loader.on('complete', onLoadComplete, this);
+    loader.loadManifest(manifest)
+});
+
+function onLoadComplete(event) {
+    app.initialize();
+    createjs.Ticker.on('tick', onUpdate, this);
+}
+
+function onUpdate(event) {
+    event.fdelta = event.delta/1000.;
+    app.onUpdate(event);
+}
+
+</script>
+</head>
+
+<body>
+    <br>
+    <canvas id="canvas" width="800" height="600">Not Working</canvas>
+</body>
+</html>
