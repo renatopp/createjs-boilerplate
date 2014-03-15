@@ -4,7 +4,6 @@ App.prototype.scenes = [];
 
 
 App.prototype.__init__ = function() {
-    this.addScene(new LevelScene());
 }
 
 App.prototype.addScene = function(scene) {

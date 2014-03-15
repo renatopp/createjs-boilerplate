@@ -1,5 +1,5 @@
-Resrouces = E();
-p = Resrouces.prototype;
+Resources = E();
+p = Resources.prototype;
 
 p.__init__ = function() {
 
