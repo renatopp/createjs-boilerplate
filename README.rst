@@ -2,8 +2,13 @@
 CREATEJS-BOILERPLATE
 ====================
 
-My boilerplate for createjs projects.
+Boilerplate for projects using the CreateJS suite and the Creatine toolkit.
 
-Requires Python and Flask to run the server.
+
+------------
+Requirements
+------------
+
+- Python 2.6+ to run the server
 
 
