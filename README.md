@@ -3,22 +3,14 @@
 This is the the boilerplates for **CreateJS** and **Creatine**.
 
 
-### minimal:
-
-The minimal structure using only **CreateJS** (using CDN). Useful for examples,
-and fast experiments.
-
-
-### basic:
-
-A basic structure using **CreateJS** and **Creatine**. This boilerplate is ready-to-work with **Cocoonjs**, so you can compile it to mobile platforms.
-
-
-### complete:
-
-A complete structure using **CreateJS**, **Creatine**, and **Cocoonjs**. This 
-boilerplate provides the full folder structure and the basic scenes for you to 
-start your games.
+- **MINIMAL**: the minimal structure using only **CreateJS** (using CDN). 
+  Useful for examples, and fast experiments.
+- **BASIC**: a basic structure using **CreateJS** and **Creatine**. This 
+  boilerplate is ready-to-work with **Cocoonjs**, so you can compile it to 
+  mobile platforms.
+- **COMPLETE**: a complete structure using **CreateJS**, **Creatine**, and 
+  **Cocoonjs**. This boilerplate provides the full folder structure and the 
+  basic scenes for you to start your games.
 
 
 ## DEPENDENCIES
